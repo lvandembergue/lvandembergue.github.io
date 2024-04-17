@@ -1,1 +1,1889 @@
-<html><h1>GFA tool</h1><p>soon availbale</p></html>
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="https://glitch.com/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>GFA Playlist Helper</title>
+      <!-- import the webpage's stylesheet -->
+      <link rel="stylesheet" href="/style.css" />
+   </head>
+   <body>
+      <!-- this is the start of content -->
+      <h1>
+         GFA Playlist Helper
+      </h1>
+      <div id="filters" class="filters"></div>
+      <table id="playlist">
+         <th onclick="sortTable('playlist',0)"></th>
+         <th onclick="sortTable('playlist',1)">Day</th>
+         <th onclick="sortTable('playlist',2)">Stage</th>
+         <th onclick="sortTable('playlist',3)">Artist</th>
+         <th onclick="sortTable('playlist',4)">Track</th>
+         <th onclick="sortTable('playlist',5)">PL</th>
+         <th onclick="sortTable('playlist',6)">Genre</th>
+         <th onclick="sortTable('playlist',7)">pop</th>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/4isewEHTP7Az2QheDdBQ6J" target="_blank"><b>24 Garage Girls</b></a></td>
+            <td><a href="https://open.spotify.com/track/0r8RKKIc4C8G6J9HAHzpaR" target="_blank">UCLA</a></td>
+            <td><b>x</b></td>
+            <td>atl trap,trap soul</td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Shangri-La',2)"><i>@Shangri-La</i></td>
+            <td><a href="https://open.spotify.com/artist/1TV0WTE9ukywcLGMh4j4iU" target="_blank"><b>A Guy Called Gerald</b></a></td>
+            <td><a href="https://open.spotify.com/track/3Zz3TYhGfZT6NFcw6cDObt" target="_blank">Voodoo Ray</a></td>
+            <td>o</td>
+            <td>acid house,atmospheric dnb,classic house,madchester,techno</td>
+            <td>28</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3YMlcBYj21DcMALlALTO7m" target="_blank"><b>Albert Lee</b></a></td>
+            <td><a href="https://open.spotify.com/track/4MnI07LzpYDbvMFpJbjfoa" target="_blank">Born To Run</a></td>
+            <td>o</td>
+            <td></td>
+            <td>24</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/3avMUJnICg6WaQsqgLvWY8" target="_blank"><b>Alma Twist</b></a></td>
+            <td><a href="https://open.spotify.com/track/0AWpNa4CXEGCmN1Cr8zoRW" target="_blank">Fear</a></td>
+            <td>o</td>
+            <td></td>
+            <td>01</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/3kzwYV3OCB010YfXMF0Avt" target="_blank"><b>Alvvays</b></a></td>
+            <td><a href="https://open.spotify.com/track/0KVWVuutF9Dn8li4HdyAeU" target="_blank">Archie, Marry Me</a></td>
+            <td>o</td>
+            <td>art pop,chamber pop,dream pop,dreamo,indie pop,indie rock,noise pop,shoegaze,toronto indie</td>
+            <td>60</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/574ERIqzZ5yZU9JhIf3Ysf" target="_blank"><b>Angie McMahon</b></a></td>
+            <td><a href="https://open.spotify.com/track/5EeqvDL2BckMvhbNtOEHAh" target="_blank">Letting Go</a></td>
+            <td>o</td>
+            <td>australian indie</td>
+            <td>53</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1zNqDE7qDGCsyzJwohVaoX" target="_blank"><b>Anne-Marie</b></a></td>
+            <td><a href="https://open.spotify.com/track/3BKD1PwArikchz2Zrlp1qi" target="_blank">Baby Don&#x27;t Hurt Me</a></td>
+            <td>o</td>
+            <td>pop</td>
+            <td>78</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/4kIwETcbpuFgRukE8o7Opx" target="_blank"><b>Arlo Parks</b></a></td>
+            <td><a href="https://open.spotify.com/track/39iRY3sjr8lsBVlBpDLwDu" target="_blank">Eugene</a></td>
+            <td>o</td>
+            <td>indie pop,indie soul,uk contemporary r&amp;b</td>
+            <td>61</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/00JAfwtx5gNiiqyor88Dr5" target="_blank"><b>Arooj Aftab</b></a></td>
+            <td><a href="https://open.spotify.com/track/2oi55VmillH7At5wHVNFbE" target="_blank">Mehram</a></td>
+            <td>o</td>
+            <td>pakistani indie</td>
+            <td>41</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/6XS2GPyMwHEgAn0VspnhMf" target="_blank"><b>Asha Puthli</b></a></td>
+            <td><a href="https://open.spotify.com/track/4jTXmhMv91Fq0ivNQDzhPh" target="_blank">Space Talk</a></td>
+            <td>o</td>
+            <td>indian jazz</td>
+            <td>35</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1WgXqy2Dd70QQOU7Ay074N" target="_blank"><b>Aurora</b></a></td>
+            <td><a href="https://open.spotify.com/track/23rdcrD0Eky4vYn2TZidxJ" target="_blank">Runaway</a></td>
+            <td>o</td>
+            <td>art pop,norwegian pop</td>
+            <td>73</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0p4nmQO2msCgU4IF37Wi3j" target="_blank"><b>Avril Lavigne</b></a></td>
+            <td><a href="https://open.spotify.com/track/5xEM5hIgJ1jjgcEBfpkt2F" target="_blank">Complicated</a></td>
+            <td>o</td>
+            <td>canadian pop,candy pop,dance pop,pop</td>
+            <td>76</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3ZpEKRjHaHANcpk10u6Ntq" target="_blank"><b>Ayra Starr</b></a></td>
+            <td><a href="https://open.spotify.com/track/1xs8bOvm3IzEYmcLJVOc34" target="_blank">Rush</a></td>
+            <td>o</td>
+            <td>afrobeats</td>
+            <td>73</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/4VqlewwKZJoIcA88PYHUDd" target="_blank"><b>Baby Queen</b></a></td>
+            <td><a href="https://open.spotify.com/track/5BCYtpbTyUQSMRwDVPb5wk" target="_blank">Dover Beach</a></td>
+            <td>o</td>
+            <td>modern alternative pop</td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6tYmTHApvspl6KAgTfHjAY" target="_blank"><b>Bar Italia</b></a></td>
+            <td><a href="https://open.spotify.com/track/08PgEBgGK65DZpxudS1J73" target="_blank">my little tony</a></td>
+            <td>o</td>
+            <td>hypnagogic pop</td>
+            <td>46</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0vTVU0KH0CVzijsoKGsTPl" target="_blank"><b>Barry Can&#x27;t Swim</b></a></td>
+            <td><a href="https://open.spotify.com/track/3NZz7DWeVQesSOn6mO39F7" target="_blank">How It Feels</a></td>
+            <td>o</td>
+            <td>jazz house</td>
+            <td>61</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0EgHhNmWcjusA7F2heSD0O" target="_blank"><b>Baxter Dury</b></a></td>
+            <td><a href="https://open.spotify.com/track/6Orwi1oYLckpnBF7NbCbrg" target="_blank">Baxter (these are my friends)</a></td>
+            <td>o</td>
+            <td>chamber psych,electrofox</td>
+            <td>48</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/3cePP77CX6XY9b0aigzrqh" target="_blank"><b>BC Camplight</b></a></td>
+            <td><a href="https://open.spotify.com/track/07MmMkkxvMpcc9uvfjj46i" target="_blank">The Last Rotation Of Earth</a></td>
+            <td>o</td>
+            <td>chamber psych,new jersey indie,one-person band,psychedelic pop</td>
+            <td>31</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/6fVeXD7D2RpFoR6bzNEDPo" target="_blank"><b>Beans on Toast</b></a></td>
+            <td><a href="https://open.spotify.com/track/5FjXipgO3HEq3ZAamyQlM2" target="_blank">Watching the World Go By</a></td>
+            <td>o</td>
+            <td>acoustic punk</td>
+            <td>36</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/28pqwEjm2WDueRWP4AjA1x" target="_blank"><b>Bernard Butler</b></a></td>
+            <td><a href="https://open.spotify.com/track/12cbwLIfaUgF2zX5xHomai" target="_blank">Camber Sands</a></td>
+            <td>o</td>
+            <td>britpop,solo wave</td>
+            <td>28</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/02YLJJnWC7YQVixkjEBRn7" target="_blank"><b>Billie Marten</b></a></td>
+            <td><a href="https://open.spotify.com/track/0DwaOWI1kC2s98qLj0LTDd" target="_blank">La Lune</a></td>
+            <td>o</td>
+            <td>british singer-songwriter,indie anthem-folk</td>
+            <td>56</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Left Field',2)"><i>@Left Field</i></td>
+            <td><a href="https://open.spotify.com/artist/5yXAFDZNUNyO92l5WTImkO" target="_blank"><b>Billy Bragg</b></a></td>
+            <td><a href="https://open.spotify.com/track/5B2mJIk8yso3ugyvfHR62A" target="_blank">California Stars</a></td>
+            <td>o</td>
+            <td>anti-folk,folk punk,permanent wave,singer-songwriter,uk americana</td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/6eU0jV2eEZ8XTM7EmlguK6" target="_blank"><b>Black Pumas</b></a></td>
+            <td><a href="https://open.spotify.com/track/6d4FWjx72iuRWzn1HwywLK" target="_blank">Colors</a></td>
+            <td>o</td>
+            <td>retro soul</td>
+            <td>63</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3MM8mtgFzaEJsqbjZBSsHJ" target="_blank"><b>Bloc Party</b></a></td>
+            <td><a href="https://open.spotify.com/track/2YxXuCdbUpil3P7tRjhW1t" target="_blank">Banquet</a></td>
+            <td>o</td>
+            <td>alternative dance,alternative rock,dance-punk,indie rock,indietronica,modern rock,neo-synthpop,new rave</td>
+            <td>61</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/7qrEXiLLnWkkYHhadZ1Oij" target="_blank"><b>Blondhsell</b></a></td>
+            <td><a href="https://open.spotify.com/track/3NfastUCFxLepBhv7UGSqR" target="_blank">Docket (feat. Bully)</a></td>
+            <td>o</td>
+            <td>bubblegrunge,indie pop</td>
+            <td>50</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/4mnrcwjD8rgFeOzvXmkcw3" target="_blank"><b>Bodger &amp; Badger</b></a></td>
+            <td><a href="https://open.spotify.com/track/7leW1Dmvs9A4oDh9i5Qwpz" target="_blank">These Words</a></td>
+            <td><b>x</b></td>
+            <td>bassline</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3pTE9iaJTkWns3mxpNQlJV" target="_blank"><b>Bombay Bicycle Club</b></a></td>
+            <td><a href="https://open.spotify.com/track/73M2Vb5MfZh8iGKudkMtlw" target="_blank">Always Like This</a></td>
+            <td>o</td>
+            <td>british indie rock,chamber pop,indie rock,indietronica,modern rock,shimmer pop</td>
+            <td>58</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb" target="_blank"><b>Bonobo</b></a></td>
+            <td><a href="https://open.spotify.com/track/7Cg3F9ZsZ2TYUnlza49NYh" target="_blank">Kong</a></td>
+            <td>o</td>
+            <td>downtempo,electronica,indietronica,instrumental hip hop,jazztronica,nu jazz,trip hop</td>
+            <td>63</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/4XquDVA8pkg5Lx91No1JxB" target="_blank"><b>Brittany Howard</b></a></td>
+            <td><a href="https://open.spotify.com/track/5zFaNeTwCtsBbMc72FtXVo" target="_blank">Stay High</a></td>
+            <td>o</td>
+            <td>black americana,modern blues rock,neo soul</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa" target="_blank"><b>Burna Boy</b></a></td>
+            <td><a href="https://open.spotify.com/track/4RoKNqyZ9622tcAeNPNv5k" target="_blank">City Boys</a></td>
+            <td>o</td>
+            <td>afrobeats,azontobeats,dancehall,nigerian hip hop,nigerian pop</td>
+            <td>79</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/7dJCdUO0l0K2WXzrzjYpmC" target="_blank"><b>Caity Baser</b></a></td>
+            <td><a href="https://open.spotify.com/track/2yAmuAPIQ2YTfbZ0IdwTOD" target="_blank">Would You (go to bed with me?) [feat. Caity Baser]</a></td>
+            <td>o</td>
+            <td>uk pop</td>
+            <td>56</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4nDoRrQiYLoBzwC5BhVJzF" target="_blank"><b>Camila Cabello</b></a></td>
+            <td><a href="https://open.spotify.com/track/2H2ytI7ompfNmRkI2sq8Uk" target="_blank">I LUV IT (feat. Playboi Carti)</a></td>
+            <td>o</td>
+            <td>dance pop,pop</td>
+            <td>81</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank"><b>Coldplay</b></a></td>
+            <td><a href="https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg" target="_blank">Yellow</a></td>
+            <td>o</td>
+            <td>permanent wave,pop</td>
+            <td>88</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0RwXnFrEoI8tltFvYpJgP6" target="_blank"><b>Confidence Man</b></a></td>
+            <td><a href="https://open.spotify.com/track/0fK4NmIDXetjIiZ2Oxz2tF" target="_blank">Now U Do - Edit</a></td>
+            <td>o</td>
+            <td>australian electropop</td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/29WzbAQtDnBJF09es0uddn" target="_blank"><b>Corinne Bailey Rae</b></a></td>
+            <td><a href="https://open.spotify.com/track/2nGFzvICaeEWjIrBrL2RAx" target="_blank">Put Your Records On</a></td>
+            <td>o</td>
+            <td>british soul,neo soul,pop soul,soul</td>
+            <td>65</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Truth Stage',2)"><i>@Truth Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3Cjg6YVStRJOV1gyAY7Df2" target="_blank"><b>Craig Charles</b></a></td>
+            <td><a href="https://open.spotify.com/track/0GTtRCefAjJk8BgyhkeKHi" target="_blank">Subtle Policing</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>00</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/0UmcqMDiiyihc3KMXvGwWb" target="_blank"><b>Cut Capers</b></a></td>
+            <td><a href="https://open.spotify.com/track/5CoMPmAsnk95FviCoqPFAk" target="_blank">Say What - Pisk Electro Swing Remix</a></td>
+            <td>o</td>
+            <td>electro swing,modern ska punk</td>
+            <td>35</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2BTZIqw0ntH9MvilQ3ewNY" target="_blank"><b>Cyndi Lauper</b></a></td>
+            <td><a href="https://open.spotify.com/track/4y1LsJpmMti1PfRQV9AWWe" target="_blank">Girls Just Want to Have Fun</a></td>
+            <td>o</td>
+            <td>dance pop,new wave pop,permanent wave,soft rock</td>
+            <td>73</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5VadK1havLhK1OpKYsXv9y" target="_blank"><b>D-Block Europe</b></a></td>
+            <td><a href="https://open.spotify.com/track/59NraMJsLaMCVtwXTSia8i" target="_blank">Prada</a></td>
+            <td>o</td>
+            <td>melodic drill,uk hip hop</td>
+            <td>78</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/7aA592KWirLsnfb5ulGWvU" target="_blank"><b>Danny Brown</b></a></td>
+            <td><a href="https://open.spotify.com/track/3FsqOTQT3d7c296eStnEnl" target="_blank">Lean Beef Patty</a></td>
+            <td>o</td>
+            <td>alternative hip hop,detroit hip hop,escape room,hip hop,underground hip hop</td>
+            <td>62</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/08DRTASY1wyduMevINkClA" target="_blank"><b>Dervish</b></a></td>
+            <td><a href="https://open.spotify.com/track/7nrfzw5nDPdtLBEwpBWi4E" target="_blank">Last Nights Fun</a></td>
+            <td>o</td>
+            <td>celtic,irish folk</td>
+            <td>37</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4QTVePrFu1xuGM9K0kNXkk" target="_blank"><b>Dexys</b></a></td>
+            <td><a href="https://open.spotify.com/track/3MrWxJaD2AT0W9DjWF64Vm" target="_blank">Come On Eileen</a></td>
+            <td>o</td>
+            <td>new romantic,new wave,new wave pop</td>
+            <td>62</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et" target="_blank"><b>Disclosure</b></a></td>
+            <td><a href="https://open.spotify.com/track/0xoYZ45fgTfyQYREZPN7Sa" target="_blank">You &amp; Me - Rivo Remix</a></td>
+            <td>o</td>
+            <td>edm,house,indietronica,uk dance</td>
+            <td>74</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/4kr94nr7SzBRas5Cb3krFZ" target="_blank"><b>DJ Spen</b></a></td>
+            <td><a href="https://open.spotify.com/track/5WUFHsHalXJth7oBEZ3pPl" target="_blank">Don&#x27;t Be Afraid</a></td>
+            <td>o</td>
+            <td>chicago house,deep house,soulful house</td>
+            <td>36</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Free University of Glastonbury (The Park)',2)"><i>@The Free University of Glastonbury (The Park)</i></td>
+            <td><a href="https://open.spotify.com/artist/4k3yrCOPB5wp2ne8R9MQoM" target="_blank"><b>Dr Janina Ramirez</b></a></td>
+            <td><a href="https://open.spotify.com/track/7ekfbblskjox5cC4jKVw47" target="_blank">Loving Me</a></td>
+            <td><b>x</b></td>
+            <td>nz pop,pop r&amp;b</td>
+            <td>48</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we" target="_blank"><b>Dua Lipa</b></a></td>
+            <td><a href="https://open.spotify.com/track/4OMJGnvZfDvsePyCwRGO7X" target="_blank">Houdini</a></td>
+            <td>o</td>
+            <td>dance pop,pop,uk pop</td>
+            <td>89</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/4XC335ouK6pXyq4QiIb8bP" target="_blank"><b>Eliza Rose</b></a></td>
+            <td><a href="https://open.spotify.com/track/39JofJHEtg8I4fSyo7Imft" target="_blank">B.O.T.A. (Baddest Of Them All) - Edit</a></td>
+            <td>o</td>
+            <td>house</td>
+            <td>63</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/4NPMwh3kDwi6uVCNtmeUvU" target="_blank"><b>Elles Bailey</b></a></td>
+            <td><a href="https://open.spotify.com/track/0XTGjWG3NIxeJZ2tXzPfpT" target="_blank">What&#x27;s the Matter with You</a></td>
+            <td>o</td>
+            <td>british country,modern blues,uk americana</td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0iDBD558yJl5IfRXg9Yfwt" target="_blank"><b>ETC Finalists</b></a></td>
+            <td><a href="https://open.spotify.com/track/71aAxHJfjmffbueCChnUSL" target="_blank">Ice Box</a></td>
+            <td><b>x</b></td>
+            <td>electronic trap,moombahton</td>
+            <td>28</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Thu 27th',1)"><i>Thu 27th</i></td>
+            <td onclick="filterTableCell('Glade Stage',2)"><i>@Glade Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5T4UKHhr4HGIC0VzdZQtAE" target="_blank"><b>Faithless</b></a></td>
+            <td><a href="https://open.spotify.com/track/07sxccsfOMu3ZiNG31pn4d" target="_blank">Insomnia - Radio Edit</a></td>
+            <td>o</td>
+            <td>big beat,downtempo,electronica,trip hop</td>
+            <td>59</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/5ztBFCBEL7OtjdAt98RnD4" target="_blank"><b>Fat White Family</b></a></td>
+            <td><a href="https://open.spotify.com/track/63XRYnAuX1mmnsSBixsMS1" target="_blank">Touch the Leather Redux</a></td>
+            <td>o</td>
+            <td>chamber psych,crank wave</td>
+            <td>39</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/4Y7tXHSEejGu1vQ9bwDdXW" target="_blank"><b>Fatboy Slim</b></a></td>
+            <td><a href="https://open.spotify.com/track/1sC9aAbpRk362KwmkfFHzy" target="_blank">Praising You (feat. Fatboy Slim)</a></td>
+            <td>o</td>
+            <td>big beat,electronica</td>
+            <td>64</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/27KG9isJFhenLHRVhwWW6c" target="_blank"><b>Flamm Flimm</b></a></td>
+            <td><a href="https://open.spotify.com/track/1TrshxybHSE7mBg26LnylQ" target="_blank">Bamboleo x Narcos</a></td>
+            <td><b>x</b></td>
+            <td>corecore</td>
+            <td>41</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/1JspXUvEv3D9ddMeLNqYWj" target="_blank"><b>Flowerovlove</b></a></td>
+            <td><a href="https://open.spotify.com/track/2KzkWP9RYW1xz4gqDRArQd" target="_blank">a girl like me</a></td>
+            <td>o</td>
+            <td>modern indie pop</td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/6tH2rLIDBEaniiX5mVsozq" target="_blank"><b>Flying Mojito Brothers</b></a></td>
+            <td><a href="https://open.spotify.com/track/0OfNcPsx6R7Pkqf7mfC3Zk" target="_blank">Wheels Keep Turning - Flying Mojito Bros Refrito</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>15</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/3ZKyADicHqelBDeADLutiu" target="_blank"><b>Flyte</b></a></td>
+            <td><a href="https://open.spotify.com/track/4FG86wYpIjIl5NrOr79Fxf" target="_blank">Tough Love</a></td>
+            <td>o</td>
+            <td>english indie rock</td>
+            <td>47</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6" target="_blank"><b>Fontaines D.C.</b></a></td>
+            <td><a href="https://open.spotify.com/track/4N8idxy0W2GDaEosAwPOMg" target="_blank">I Love You</a></td>
+            <td>o</td>
+            <td>crank wave,irish indie rock,irish post-punk</td>
+            <td>58</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/27M9shmwhIjRo7WntpT9Rp" target="_blank"><b>Frank Turner</b></a></td>
+            <td><a href="https://open.spotify.com/track/7edGUOJ1JzA9pmCYP4uchP" target="_blank">Recovery</a></td>
+            <td>o</td>
+            <td>acoustic rock,folk punk,scottish rock</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6Jb7UcGSrZigvdcjKZSaDP" target="_blank"><b>Frankie Archer</b></a></td>
+            <td><a href="https://open.spotify.com/track/5YqgJluBbobJEyqW5JTQpa" target="_blank">Oxford City</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>07</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4dc2VzMgOqR1YXmgJEkKYp" target="_blank"><b>Fun Lovin&#x27; Crime Writers</b></a></td>
+            <td><a href="https://open.spotify.com/track/6C4jH49VV6gmdVgo0890Ja" target="_blank">Achy Breaky Heart</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>01</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/1vlBj1Zv2y6dCNdGeIBsNo" target="_blank"><b>Future Utopia</b></a></td>
+            <td><a href="https://open.spotify.com/track/0gSLaX91J2Cs9cWXqsRc4X" target="_blank">Children Of The Internet - Ezra Collective Remix</a></td>
+            <td>o</td>
+            <td></td>
+            <td>40</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/6iKe6ON2rZrdXbuuhI3Gat" target="_blank"><b>Fuzzbox</b></a></td>
+            <td><a href="https://open.spotify.com/track/0if715oLigTtEpmM0cWQWz" target="_blank">Pink Sunshine</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>20</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/7rftfGIYEeZ79sLb58ZBDi" target="_blank"><b>Gabrielle</b></a></td>
+            <td><a href="https://open.spotify.com/track/0HKD13PLq2WicViBBhSrOl" target="_blank">Out Of Reach</a></td>
+            <td><b>x</b></td>
+            <td>british soul,new wave pop</td>
+            <td>56</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/4ochG92mPmiBsrsPpIWfWf" target="_blank"><b>George Egg</b></a></td>
+            <td><a href="https://open.spotify.com/track/2jnn12OLbgo9XZ7sW5lozZ" target="_blank">Violin Sonata in E Minor, BWV 1023: I. Allegro</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>10</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/7zJL978NtANOysfGY21ty6" target="_blank"><b>Ghetts</b></a></td>
+            <td><a href="https://open.spotify.com/track/4zFKvMMR12rfkbyWriLlBM" target="_blank">Double Standards (feat. Sampha)</a></td>
+            <td>o</td>
+            <td>grime,uk hip hop</td>
+            <td>53</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3jc496ljiyrS3ECrD7QiqL" target="_blank"><b>Gipsy Kings</b></a></td>
+            <td><a href="https://open.spotify.com/track/5siwoDxCGDYnmfWV5SlUpE" target="_blank">Bamboleo</a></td>
+            <td>o</td>
+            <td>flamenco,rumba,world</td>
+            <td>66</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/3sFTupo9UGgrujjN21BjwR" target="_blank"><b>Gossip</b></a></td>
+            <td><a href="https://open.spotify.com/track/428Dl0NOBojmUS98R2pDHr" target="_blank">Heavy Cross</a></td>
+            <td>o</td>
+            <td>alternative dance,electroclash,new rave,olympia wa indie</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4bFdVUzXSr2unwjEoOe5dY" target="_blank"><b>Grace Petrie</b></a></td>
+            <td><a href="https://open.spotify.com/track/0pT2KwVT42zvGnxz3lMkZF" target="_blank">Start Again</a></td>
+            <td>o</td>
+            <td>acoustic punk,leicester indie</td>
+            <td>36</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/6imyM8T1Xbe8v2iZe41dR7" target="_blank"><b>Haircut 100</b></a></td>
+            <td><a href="https://open.spotify.com/track/4vwLjB2NRtl9b34jRe6cWd" target="_blank">Love Plus One</a></td>
+            <td>o</td>
+            <td>brit funk,new romantic,new wave,new wave pop,sophisti-pop</td>
+            <td>38</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6UCQYrcJ6wab6gnQ89OJFh" target="_blank"><b>Headie One</b></a></td>
+            <td><a href="https://open.spotify.com/track/3KAkDCkduuYArFXzN8nGoE" target="_blank">I KNOW YOU CARE (feat. Headie One)</a></td>
+            <td>o</td>
+            <td>uk hip hop</td>
+            <td>65</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/7sTKZr30LqC928DZ5P9mNQ" target="_blank"><b>Heilung</b></a></td>
+            <td><a href="https://open.spotify.com/track/7oGwKNBX90dXL53ZbhPxJk" target="_blank">Norupo</a></td>
+            <td>o</td>
+            <td>dark folk,rune folk,viking folk</td>
+            <td>53</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/4Gmrt82h2vjGjnp67SG5Nw" target="_blank"><b>High Vis</b></a></td>
+            <td><a href="https://open.spotify.com/track/0vf5m8HAO3EGlBd6fNTsor" target="_blank">Walking Wires</a></td>
+            <td>o</td>
+            <td>uk post-punk revival</td>
+            <td>39</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/0XfQBWgzisaS9ltDV9bXAS" target="_blank"><b>Honey Dijon</b></a></td>
+            <td><a href="https://open.spotify.com/track/27mpDozgyKGFOvQZbStbdc" target="_blank">Work (feat. Dave Giles II, Cor.Ece &amp; Mike Dunn)</a></td>
+            <td>o</td>
+            <td></td>
+            <td>42</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C" target="_blank"><b>IDLES</b></a></td>
+            <td><a href="https://open.spotify.com/track/5MP8QCjsJQPJ5ApdHMg3dl" target="_blank">Dancer</a></td>
+            <td>o</td>
+            <td>bristol indie,crank wave,indie rock,modern rock</td>
+            <td>63</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4GwPAPOKcvW46DRiBCHzpM" target="_blank"><b>Jada Star</b></a></td>
+            <td><a href="https://open.spotify.com/track/4pVFptNIdvYjmd8Abxbcqf" target="_blank">Keeper of My Heart</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>01</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/0vn7UBvSQECKJm2817Yf1P" target="_blank"><b>James</b></a></td>
+            <td><a href="https://open.spotify.com/track/1oht5GevPN9t1T3kG1m1GO" target="_blank">Fire and Rain - 2019 Remaster</a></td>
+            <td><b>x</b></td>
+            <td>classic rock,folk,folk rock,heartland rock,mellow gold,singer-songwriter,soft rock</td>
+            <td>67</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/53KwLdlmrlCelAZMaLVZqU" target="_blank"><b>James Blake</b></a></td>
+            <td><a href="https://open.spotify.com/track/76gcXhY3Zv6wW0BTe9nHJo" target="_blank">TIL FURTHER NOTICE (feat. James Blake &amp; 21 Savage)</a></td>
+            <td>o</td>
+            <td>art pop,indie soul,indietronica,uk alternative pop</td>
+            <td>69</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/7A0awCXkE1FtSU8B0qwOJQ" target="_blank"><b>Jamie XX</b></a></td>
+            <td><a href="https://open.spotify.com/track/7lPgKA5mLFNmGPMdb07OlM" target="_blank">Loud Places</a></td>
+            <td>o</td>
+            <td>electronica,future garage,indie soul,indietronica</td>
+            <td>58</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6ueGR6SWhUJfvEhqkvMsVs" target="_blank"><b>Janelle Monáe</b></a></td>
+            <td><a href="https://open.spotify.com/track/5gW5dSy3vXJxgzma4rQuzH" target="_blank">Make Me Feel</a></td>
+            <td>o</td>
+            <td>afrofuturism,alternative r&amp;b,atl hip hop,neo soul,r&amp;b</td>
+            <td>67</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5KjGwF0TkKmKSC42Mtq2VV" target="_blank"><b>Jessie Reid</b></a></td>
+            <td><a href="https://open.spotify.com/track/4lDviyx50ZMALSovCHFo61" target="_blank">Let Your Love Run Cold</a></td>
+            <td><b>x</b></td>
+            <td>modern indie folk</td>
+            <td>33</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/5Mq7iqCWBzofK39FBqblNc" target="_blank"><b>Jessie Ware</b></a></td>
+            <td><a href="https://open.spotify.com/track/71AATBHZGo82EnjZnG53Zx" target="_blank">Say You Love Me</a></td>
+            <td>o</td>
+            <td>british soul,electropop,neo soul,pop soul,uk pop</td>
+            <td>59</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/5ncNJNBW6jRC3xnY7ZSzLj" target="_blank"><b>JFB</b></a></td>
+            <td><a href="https://open.spotify.com/track/7Itu104w80JUTTo8UFNeMz" target="_blank">Wobble and Squeak</a></td>
+            <td>o</td>
+            <td>breakbeat,electro swing</td>
+            <td>22</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/56GNqAFg9wJNTwcHsJhyS2" target="_blank"><b>John Smith</b></a></td>
+            <td><a href="https://open.spotify.com/track/1WUHeOPayLKPMG35uBJVUj" target="_blank">Far Too Good</a></td>
+            <td><b>x</b></td>
+            <td>british singer-songwriter,liverpool indie</td>
+            <td>48</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/24icoQNJSEWNu3XvqKBR68" target="_blank"><b>Jordan Rakei</b></a></td>
+            <td><a href="https://open.spotify.com/track/64I9byMYBlS1ARsC3vtpgW" target="_blank">Ottolenghi</a></td>
+            <td>o</td>
+            <td>indie soul,neo r&amp;b</td>
+            <td>58</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/38euc5ce2q2MMzaoJcPstz" target="_blank"><b>Josh Rouse</b></a></td>
+            <td><a href="https://open.spotify.com/track/51b932KKxiuq7pMxfTqwW6" target="_blank">Flight Attendant</a></td>
+            <td>o</td>
+            <td></td>
+            <td>41</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5yzE49FicYiSxN61oaxkNn" target="_blank"><b>Judy Collins</b></a></td>
+            <td><a href="https://open.spotify.com/track/2xSfwtV4mUr2h63Q1zJH58" target="_blank">Both Sides Now</a></td>
+            <td>o</td>
+            <td>american folk revival,folk,folk rock,mellow gold,singer-songwriter</td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/59oA5WbbQvomJz2BuRG071" target="_blank"><b>Jungle</b></a></td>
+            <td><a href="https://open.spotify.com/track/19kHhX6f6EfLU7rcO3RqjO" target="_blank">Back On 74</a></td>
+            <td>o</td>
+            <td>indie soul,uk contemporary r&amp;b</td>
+            <td>75</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/1gR0gsQYfi6joyO1dlp76N" target="_blank"><b>Justice</b></a></td>
+            <td><a href="https://open.spotify.com/track/7sjuNUjWtSqhbxJ3RAUffm" target="_blank">One Night/All Night</a></td>
+            <td>o</td>
+            <td>alternative dance,dance-punk,electronica,filter house,indietronica,neo-synthpop,new rave</td>
+            <td>64</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/5vBKu1igxFo6g1sHADkIdg" target="_blank"><b>Kate Nash</b></a></td>
+            <td><a href="https://open.spotify.com/track/1wi4ti9BYUbwoGJ1EBUVtv" target="_blank">Foundations</a></td>
+            <td>o</td>
+            <td>anti-folk,piano rock</td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/53A0W3U0s8diEn9RhXQhVz" target="_blank"><b>Keane</b></a></td>
+            <td><a href="https://open.spotify.com/track/0ll8uFnc0nANY35E0Lfxvg" target="_blank">Somewhere Only We Know</a></td>
+            <td>o</td>
+            <td>neo mellow,piano rock,pop rock</td>
+            <td>74</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/7uMDnSZyUYNBPLhPMNuaM2" target="_blank"><b>Kenya Grace</b></a></td>
+            <td><a href="https://open.spotify.com/track/593knnQN4REEshx8th9zgK" target="_blank">Strangers</a></td>
+            <td>o</td>
+            <td>singer-songwriter pop</td>
+            <td>74</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/4DFhHyjvGYa9wxdHUjtDkc" target="_blank"><b>Kindred</b></a></td>
+            <td><a href="https://open.spotify.com/track/5KDNFlHAdDJ84fhK27c35X" target="_blank">Judith</a></td>
+            <td>o</td>
+            <td>alternative metal,alternative rock,nu metal,rock,supergroup</td>
+            <td>63</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4wyNyxs74Ux8UIDopNjIai" target="_blank"><b>King Krule</b></a></td>
+            <td><a href="https://open.spotify.com/track/30JUrbIq4PsRjIvDz8freE" target="_blank">Out Getting Ribs</a></td>
+            <td>o</td>
+            <td>uk alternative pop</td>
+            <td>61</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/6c2qQFq3xfxFJndX6wSe4f" target="_blank"><b>Kingfisher</b></a></td>
+            <td><a href="https://open.spotify.com/track/4SHgZySOqyih9VIhoe239c" target="_blank">eyes don&#x27;t lie</a></td>
+            <td>o</td>
+            <td>limerick indie</td>
+            <td>53</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/1ZVACPeq7ccGCoUXwtafUU" target="_blank"><b>Kneecap</b></a></td>
+            <td><a href="https://open.spotify.com/track/1ifVrAQPH2DZ3FBFu48rFw" target="_blank">Better Way To Live</a></td>
+            <td>o</td>
+            <td>irish hip hop</td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2zPm4XzwKuPidtfKh92H2Z" target="_blank"><b>Lankum</b></a></td>
+            <td><a href="https://open.spotify.com/track/3AalM1DgBQ8J3IjpfwVNcV" target="_blank">Master Crowley&#x27;s</a></td>
+            <td>o</td>
+            <td>irish neo-traditional,irish rock,uilleann pipes</td>
+            <td>40</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/066X20Nz7iquqkkCW6Jxy6" target="_blank"><b>LCD Soundsystem</b></a></td>
+            <td><a href="https://open.spotify.com/track/5MP8QCjsJQPJ5ApdHMg3dl" target="_blank">Dancer</a></td>
+            <td>o</td>
+            <td>alternative dance,alternative rock,art pop,dance rock,dance-punk,electronic rock,electronica,indie rock,indietronica,neo-synthpop,new rave</td>
+            <td>59</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6eXZu6O7nAUA5z6vLV8NKI" target="_blank"><b>Little Simz</b></a></td>
+            <td><a href="https://open.spotify.com/track/0pJO1tc1GpnxFyQp6Zp82r" target="_blank">Gorilla</a></td>
+            <td>o</td>
+            <td>alternative r&amp;b,escape room,trap queen</td>
+            <td>63</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5DhdFUvQCHgY2F9mVL8uoz" target="_blank"><b>London Community Gospel Choir</b></a></td>
+            <td><a href="https://open.spotify.com/track/06OBnIdrBHKdDExrOUOuEg" target="_blank">Glory, Glory, Hallelujah</a></td>
+            <td><b>x</b></td>
+            <td>british choir,gospel singers</td>
+            <td>34</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3Bd1cgCjtCI32PYvDC3ynO" target="_blank"><b>London Grammar</b></a></td>
+            <td><a href="https://open.spotify.com/track/0QMK2WVjKy3iKdqajgDB1P" target="_blank">Strong</a></td>
+            <td>o</td>
+            <td>metropopolis,nottingham indie</td>
+            <td>65</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/3QLPy7F0m9XgChp2Lk9B3N" target="_blank"><b>Lucy Spraggan</b></a></td>
+            <td><a href="https://open.spotify.com/track/0tn15AIyBUAi9WLzzhKQsk" target="_blank">Last Night (Beer Fear)</a></td>
+            <td>o</td>
+            <td>talent show</td>
+            <td>50</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/4TAg5ckpTlxXLPTJW4eDMo" target="_blank"><b>Lulu</b></a></td>
+            <td><a href="https://open.spotify.com/track/0CRj5TRkYfOxzHerEf29yM" target="_blank">ROACHES</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>38</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/2RVvqRBon9NgaGXKfywDSs" target="_blank"><b>Maisie Adams</b></a></td>
+            <td><a href="https://open.spotify.com/track/7ijN634pExtKjNIm7vvvAa" target="_blank">History Of Man</a></td>
+            <td><b>x</b></td>
+            <td>alt z,uk pop</td>
+            <td>64</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/33yje3hgpNfdXpqdJQcrt9" target="_blank"><b>Mannequin Pussy</b></a></td>
+            <td><a href="https://open.spotify.com/track/4C6EPbxGiGSX95nJY3z9ZG" target="_blank">I Got Heaven</a></td>
+            <td>o</td>
+            <td>bubblegrunge,indie punk,modern hardcore,modern power pop,riot grrrl</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig" target="_blank"><b>Masego</b></a></td>
+            <td><a href="https://open.spotify.com/track/51rPRW8NjxZoWPPjnRGzHw" target="_blank">Tadow</a></td>
+            <td>o</td>
+            <td>alternative r&amp;b,indie soul</td>
+            <td>73</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/48dgx7iGqLQ3E5KO3pzd94" target="_blank"><b>Mdou Moctar</b></a></td>
+            <td><a href="https://open.spotify.com/track/6jRkPX7aziy9qweRaBloXF" target="_blank">Funeral for Justice</a></td>
+            <td>o</td>
+            <td>desert blues,musique nigerienne,tuareg guitar</td>
+            <td>38</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0bzfPKdbXL5ezYW2z3UGQj" target="_blank"><b>Michael Kiwanuka</b></a></td>
+            <td><a href="https://open.spotify.com/track/7KX65PC1UZuImsUInThbav" target="_blank">Cold Little Heart - Radio Edit</a></td>
+            <td>o</td>
+            <td>british soul,neo soul,psychedelic soul,soul</td>
+            <td>66</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/7ritjcrqfuDJoXWZv8OIMG" target="_blank"><b>Michele Stodart</b></a></td>
+            <td><a href="https://open.spotify.com/track/44at4P07dTeUqNpoDhPivB" target="_blank">These Bones</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>06</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3NUtpWpGDoffm3RCGhSHtl" target="_blank"><b>Mount Kimbie</b></a></td>
+            <td><a href="https://open.spotify.com/track/64mpPHhJIs1Fzlk1n7b9Kn" target="_blank">Empty And Silent (feat. King Krule)</a></td>
+            <td>o</td>
+            <td>electra,electronica,future garage,indie soul,indietronica,wonky</td>
+            <td>57</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Genosys',2)"><i>@Genosys</i></td>
+            <td><a href="https://open.spotify.com/artist/4K2IUtmY2APWh6mdxzBOZF" target="_blank"><b>Moxie</b></a></td>
+            <td><a href="https://open.spotify.com/track/0PcK6RbnO4NbpN7IrzWzMY" target="_blank">Blue Skies</a></td>
+            <td>o</td>
+            <td></td>
+            <td>35</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/7n1EM42Fseebd9H2p8eWWS" target="_blank"><b>New Model Army</b></a></td>
+            <td><a href="https://open.spotify.com/track/5hiUBcY7ZvytQfWOOfV1pA" target="_blank">51st State</a></td>
+            <td>o</td>
+            <td>uk post-punk</td>
+            <td>44</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/1yz8XixOiIJJ9IxjbnfYV6" target="_blank"><b>Newdad</b></a></td>
+            <td><a href="https://open.spotify.com/track/2mUl2MNzIO6BHCrI1QdEcj" target="_blank">Sickly Sweet</a></td>
+            <td>o</td>
+            <td>crank wave,irish indie rock</td>
+            <td>46</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/7BMR0fwtEvzGtK4rNGdoiQ" target="_blank"><b>Nia archives</b></a></td>
+            <td><a href="https://open.spotify.com/track/6c21bVRfGC8IOXvQVQ2UTb" target="_blank">Forbidden Feelingz</a></td>
+            <td>o</td>
+            <td>modern jungle</td>
+            <td>60</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/5NCKpzuowtihcIrIHFjKbJ" target="_blank"><b>Nitin Sawhney</b></a></td>
+            <td><a href="https://open.spotify.com/track/0TOVfRtYXE7D2CZw0fx9NU" target="_blank">Daydream (feat. Ashwin Srinivasan)</a></td>
+            <td>o</td>
+            <td>indian fusion,world fusion</td>
+            <td>42</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/1EpyA68dKpjf7jXmQL88Hy" target="_blank"><b>Noname</b></a></td>
+            <td><a href="https://open.spotify.com/track/5rNqaOOSNGrYtMo4sLDXU6" target="_blank">Self</a></td>
+            <td><b>x</b></td>
+            <td>alternative r&amp;b,chicago rap</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp" target="_blank"><b>Nothing But Thieves</b></a></td>
+            <td><a href="https://open.spotify.com/track/7uEvezzgCoYmqRDloOXUSR" target="_blank">Something On My Mind</a></td>
+            <td>o</td>
+            <td>alternative pop rock,modern alternative rock,modern rock</td>
+            <td>69</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5vIOGcdmx1eIkq3ZtuS12U" target="_blank"><b>Ocean Colour Scene</b></a></td>
+            <td><a href="https://open.spotify.com/track/4oPF43XotiOin8UroIsE0t" target="_blank">The Day We Caught The Train</a></td>
+            <td>o</td>
+            <td>britpop,madchester,mod revival</td>
+            <td>49</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/1hv3TErshfpU4SpYxRPkZn" target="_blank"><b>Oh My God! It&#x27;s The Church</b></a></td>
+            <td><a href="https://open.spotify.com/track/7aHLizRK2cGMOW3CvwRxkw" target="_blank">Sexy Jesus Will 4give U</a></td>
+            <td>o</td>
+            <td></td>
+            <td>09</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/1OOpgf6NT46tOGAgjgZtzl" target="_blank"><b>Old Time Sailors</b></a></td>
+            <td><a href="https://open.spotify.com/track/6WdcvzQADmrL8nucimUV6r" target="_blank">We&#x27;ll Meet Again</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/00x1fYSGhdqScXBRpSj3DW" target="_blank"><b>Olivia Dean</b></a></td>
+            <td><a href="https://open.spotify.com/track/36vmaZyO0iAE6FZ7287fg2" target="_blank">Dive</a></td>
+            <td><b>x</b></td>
+            <td>pop soul,uk pop</td>
+            <td>65</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/3csPCeXsj2wezyvkRFzvmV" target="_blank"><b>Orbital</b></a></td>
+            <td><a href="https://open.spotify.com/track/5xcunlfaZvD9BDQsLONI7A" target="_blank">Halcyon and On and On</a></td>
+            <td>o</td>
+            <td>big beat,breakbeat,electronica,intelligent dance music,rave</td>
+            <td>48</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0HutkALC7kq2L8b9bnZUkq" target="_blank"><b>Otoboke Beaver</b></a></td>
+            <td><a href="https://open.spotify.com/track/6NeSiZokIiQwJaqAID41Vy" target="_blank">S&#x27;il vous plait</a></td>
+            <td>o</td>
+            <td>j-punk,japanese girl punk,japanese pop punk,japanese punk rock</td>
+            <td>39</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4fwuXg6XQHfdlOdmw36OHa" target="_blank"><b>Paloma Faith</b></a></td>
+            <td><a href="https://open.spotify.com/track/62ke5zFUJN6RvtXZgVH0F8" target="_blank">Only Love Can Hurt Like This</a></td>
+            <td><b>x</b></td>
+            <td>british soul,talent show,uk pop</td>
+            <td>67</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Cabaret Marquee',2)"><i>@Cabaret Marquee</i></td>
+            <td><a href="https://open.spotify.com/artist/7vUBwx1lfMIrQtxk8nrAp7" target="_blank"><b>Pam Ayres</b></a></td>
+            <td><a href="https://open.spotify.com/track/13u7lJOLWQqUyIe8DGaOq2" target="_blank">The Dolly On the Dustcart</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>00</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/6mZq9w8A6isGakPJcnY4p7" target="_blank"><b>Papaphone</b></a></td>
+            <td><a href="https://open.spotify.com/track/4bo5sYVAwMB6wGUUg3XqyA" target="_blank">Who Dat Knockin, Pt. 1</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>40</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0j8ayrsnl4yA83Eg3ilUi6" target="_blank"><b>Paul Casey</b></a></td>
+            <td><a href="https://open.spotify.com/track/70YhAZC5YroeVfUmLxWEgY" target="_blank">Wide Open Road</a></td>
+            <td>o</td>
+            <td>derry indie,northern irish indie</td>
+            <td>03</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1aIozCeQrpKipbEdkGtr0j" target="_blank"><b>Paul Heaton</b></a></td>
+            <td><a href="https://open.spotify.com/track/3xnzEpMHBhm1BdHNsk7OjL" target="_blank">D.I.Y</a></td>
+            <td><b>x</b></td>
+            <td>british alternative rock,britpop,solo wave</td>
+            <td>33</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2mLA48B366zkELXYx7hcDN" target="_blank"><b>Peggy Gou</b></a></td>
+            <td><a href="https://open.spotify.com/track/23RoR84KodL5HWvUTneQ1w" target="_blank">(It Goes Like) Nanana - Edit</a></td>
+            <td><b>x</b></td>
+            <td>electra,float house</td>
+            <td>70</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/12VaqyEhgwDRuFfEqbnrpz" target="_blank"><b>PJ Harvey</b></a></td>
+            <td><a href="https://open.spotify.com/track/48mJX8glOrQkrSdVBjc0Wb" target="_blank">Down By The Water</a></td>
+            <td>o</td>
+            <td>alternative rock,art pop,melancholia,permanent wave,piano rock,singer-songwriter</td>
+            <td>58</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6uQnHzEj8hj0UZCKjBvTaG" target="_blank"><b>Ralph McTell</b></a></td>
+            <td><a href="https://open.spotify.com/track/2zwH1NlxBEpzVlvzXNHQso" target="_blank">Streets of London</a></td>
+            <td>o</td>
+            <td>british folk</td>
+            <td>42</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/7eFa5ZzDWxhQK2WKIBF6AF" target="_blank"><b>Red Hot Chilli Pipers</b></a></td>
+            <td><a href="https://open.spotify.com/track/191Y5xUWn4jftONOABUy4F" target="_blank">Leave a Light On (feat. Tom Walker)</a></td>
+            <td>o</td>
+            <td>bagpipe,celtic rock</td>
+            <td>39</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d" target="_blank"><b>Remi Wolf</b></a></td>
+            <td><a href="https://open.spotify.com/track/6NgvAmrhjUENGdtVQnBHx8" target="_blank">Cinderella</a></td>
+            <td><b>x</b></td>
+            <td>indie pop,modern alternative pop</td>
+            <td>66</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/3X2DdnmoANw8Rg8luHyZQb" target="_blank"><b>Romy</b></a></td>
+            <td><a href="https://open.spotify.com/track/1kDX084EZutVgxAJCaxwIA" target="_blank">Lights Out</a></td>
+            <td>o</td>
+            <td></td>
+            <td>59</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1E2AEtxaFaJtH0lO7kgNKw" target="_blank"><b>Russel Crowe&#x27;s Indoor Garden Party</b></a></td>
+            <td><a href="https://open.spotify.com/track/4uJDDG8vXJ6fZHtTfrPfMX" target="_blank">She Likes It (feat. Jake Scott)</a></td>
+            <td><b>x</b></td>
+            <td>contemporary country,country,country road,modern country rock</td>
+            <td>61</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4tqPTKknmeQK1uDEFVfX4G" target="_blank"><b>Ryan McMullan</b></a></td>
+            <td><a href="https://open.spotify.com/track/1sqixLUSTJKPHCSBc42egp" target="_blank">Another Minute with You</a></td>
+            <td><b>x</b></td>
+            <td>indie anthem-folk</td>
+            <td>48</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/2WoVwexZuODvclzULjPQtm" target="_blank"><b>Sampha</b></a></td>
+            <td><a href="https://open.spotify.com/track/28qA8y1sz0FTuSapsCxNOG" target="_blank">Father Time (feat. Sampha)</a></td>
+            <td>o</td>
+            <td>alternative r&amp;b,indie soul</td>
+            <td>64</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2wpJOPmf1TIOzrB9mzHifd" target="_blank"><b>Scouting For Girls</b></a></td>
+            <td><a href="https://open.spotify.com/track/0wG4gampO24nC7VKm5pxjg" target="_blank">She&#x27;s So Lovely</a></td>
+            <td>o</td>
+            <td>talent show</td>
+            <td>54</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/7nqOGRxlXj7N2JYbgNEjYH" target="_blank"><b>Seventeen</b></a></td>
+            <td><a href="https://open.spotify.com/track/3AOf6YEpxQ894FmrwI9k96" target="_blank">Super</a></td>
+            <td>o</td>
+            <td>k-pop,k-pop boy group</td>
+            <td>79</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5e4Dhzv426EvQe3aDb64jL" target="_blank"><b>Shania Twain</b></a></td>
+            <td><a href="https://open.spotify.com/track/2mqaYmF0XmV8egZB6jQOtN" target="_blank">Man! I Feel Like A Woman!</a></td>
+            <td>o</td>
+            <td>canadian country,canadian pop,contemporary country,country,country dawn</td>
+            <td>72</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/4LUOGNccPSilRIm4Jcflg2" target="_blank"><b>Shaznay Lewis</b></a></td>
+            <td><a href="https://open.spotify.com/track/4uAdlTvlNFUapQ4muzBh24" target="_blank">Kiss of Life</a></td>
+            <td>o</td>
+            <td>british soul</td>
+            <td>26</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/2p1fiYHYiXz9qi0JJyxBzN" target="_blank"><b>Skepta</b></a></td>
+            <td><a href="https://open.spotify.com/track/3mARtPEP8hi1LzMctEwVN4" target="_blank">Tony Montana</a></td>
+            <td>o</td>
+            <td>birmingham grime,grime,instrumental grime,uk hip hop</td>
+            <td>74</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/3csPCeXsj2wezyvkRFzvmV" target="_blank"><b>Skream &amp; Benga</b></a></td>
+            <td><a href="https://open.spotify.com/track/5xcunlfaZvD9BDQsLONI7A" target="_blank">Halcyon and On and On</a></td>
+            <td>o</td>
+            <td>big beat,breakbeat,electronica,intelligent dance music,rave</td>
+            <td>48</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/0otAqZw8htTsGHfqR491Yh" target="_blank"><b>Sleaford Mods</b></a></td>
+            <td><a href="https://open.spotify.com/track/06GBeo9UxaThL6monvFzHe" target="_blank">Mork n Mindy</a></td>
+            <td>o</td>
+            <td>crank wave,nottingham hip hop,nottingham indie</td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/4wXchxfTTggLtzkoUhO86Q" target="_blank"><b>Soccer Mommy</b></a></td>
+            <td><a href="https://open.spotify.com/track/3BpUZB0tw4zNmG3Iw1mclL" target="_blank">Your Dog</a></td>
+            <td>o</td>
+            <td>art pop,bubblegrunge,indie pop,indie rock,small room</td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/7wXTWO45lqpUejDkike0Gf" target="_blank"><b>Sofia Kourtesis</b></a></td>
+            <td><a href="https://open.spotify.com/track/0rm385SIdp7KV248WA3yI4" target="_blank">Fantasy - Sofia Kourtesis Remix</a></td>
+            <td>o</td>
+            <td>experimental house</td>
+            <td>50</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0uT3QSrGqBESB5s0XMa3WK" target="_blank"><b>Songwriters Arc</b></a></td>
+            <td><a href="https://open.spotify.com/track/1Tmu9p5ICaJqZI4ZOeZtQj" target="_blank">Issues</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>51</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/685XjGzGztyivfR3fAjoxo" target="_blank"><b>Squid</b></a></td>
+            <td><a href="https://open.spotify.com/track/5mWlyBpAyIpP1lI1AXjln4" target="_blank">Houseplants</a></td>
+            <td>o</td>
+            <td>brighton indie,crank wave,english indie rock,uk post-punk revival</td>
+            <td>39</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/7GeAzBsalYANXTi1ReOm1R" target="_blank"><b>Stanton Warriors</b></a></td>
+            <td><a href="https://open.spotify.com/track/566j2mk7SqZjDS4QfPyhyt" target="_blank">Feel Good Inc. - Stanton Warriors Remix</a></td>
+            <td>o</td>
+            <td>breakbeat,bristol electronic,nu skool breaks</td>
+            <td>36</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/6UL7BodGc5iVmQGlMwHR0g" target="_blank"><b>Steel Pulse</b></a></td>
+            <td><a href="https://open.spotify.com/track/6PbtTwGUPPbnT7nRTA1gS3" target="_blank">Your House</a></td>
+            <td>o</td>
+            <td>reggae,roots reggae,uk reggae</td>
+            <td>56</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/1RqKaZtnoko0n8YpgLNZkx" target="_blank"><b>Stone Jets</b></a></td>
+            <td><a href="https://open.spotify.com/track/5GIUHrDsFowJPjy6xFy9PR" target="_blank">How Can You</a></td>
+            <td>o</td>
+            <td>south african rock</td>
+            <td>11</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1UzKSuyOqKgUupcNNEtnF1" target="_blank"><b>Stornoway</b></a></td>
+            <td><a href="https://open.spotify.com/track/0ANx3accyfc1uuZZ2Bolq3" target="_blank">Zorbing</a></td>
+            <td>o</td>
+            <td>oxford indie</td>
+            <td>34</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('West Holts',2)"><i>@West Holts</i></td>
+            <td><a href="https://open.spotify.com/artist/7rZNSLWMjTbwdLNskFbzFf" target="_blank"><b>Sugababes</b></a></td>
+            <td><a href="https://open.spotify.com/track/2nCmCt4B5vkabS0zeOuc1Z" target="_blank">Push The Button</a></td>
+            <td>o</td>
+            <td>dance pop,europop,girl group,talent show</td>
+            <td>58</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Pyramid Stage',2)"><i>@Pyramid Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP" target="_blank"><b>SZA</b></a></td>
+            <td><a href="https://open.spotify.com/track/1bjeWoagtHmUKputLVyDxQ" target="_blank">Saturn</a></td>
+            <td>o</td>
+            <td>pop,r&amp;b,rap</td>
+            <td>91</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2gTl60Ao3u7bljVnAqxPh8" target="_blank"><b>Tanitha Tikaram</b></a></td>
+            <td><a href="https://open.spotify.com/track/651In9fY9BregQWY0cF7l2" target="_blank">Twist in My Sobriety</a></td>
+            <td>o</td>
+            <td>new wave pop</td>
+            <td>50</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/784raV75AJ0QjwVLzpvKkJ" target="_blank"><b>The Bar-Steward Sons of Val Doonican</b></a></td>
+            <td><a href="https://open.spotify.com/track/02bpx8jgCdgbjEsVq0vrR4" target="_blank">The Lady in Greggs</a></td>
+            <td>o</td>
+            <td>parody</td>
+            <td>07</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2i17uDAKnwPO7PlDT4nLaz" target="_blank"><b>The Bootleg Beatles</b></a></td>
+            <td><a href="https://open.spotify.com/track/50HURWGNsCiJw4qFDQu40X" target="_blank">the day i died</a></td>
+            <td><b>x</b></td>
+            <td>lo-fi chill,sad lo-fi</td>
+            <td>43</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/1xgFexIwrf2QjbU0buCNnp" target="_blank"><b>The Breeders</b></a></td>
+            <td><a href="https://open.spotify.com/track/1KdwPeY1WRWQGHCmRJTveb" target="_blank">Cannonball</a></td>
+            <td>o</td>
+            <td>alternative rock</td>
+            <td>52</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Fri 28th',1)"><i>Fri 28th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/6nnn5LYcpqTA3f7mjLcpuK" target="_blank"><b>The Burma</b></a></td>
+            <td><a href="https://open.spotify.com/track/0Ws8QwxIbTXSBF72SeAdhM" target="_blank">Holiday</a></td>
+            <td><b>x</b></td>
+            <td>irish indie rock</td>
+            <td>11</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/5H7XrGUz74HrglobO4N3Nc" target="_blank"><b>The Cash Cows</b></a></td>
+            <td><a href="https://open.spotify.com/track/1g2h8nekGtd6dAaXcn7MeZ" target="_blank">Stayin Alive</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>02</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/023YMawCG3OvACmRjWxLWC" target="_blank"><b>The Cat Empire</b></a></td>
+            <td><a href="https://open.spotify.com/track/57LP4yVIIBkRLWbq0ETF4K" target="_blank">Two Shoes</a></td>
+            <td>o</td>
+            <td>australian reggae fusion,australian ska,ska jazz</td>
+            <td>52</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/0Li5gN0dvr75XWnu9R3p1U" target="_blank"><b>The Deep Blue</b></a></td>
+            <td><a href="https://open.spotify.com/track/69Qd8v6jQ4GfXDcsOqkHLd" target="_blank">Bad Tattoo</a></td>
+            <td>o</td>
+            <td></td>
+            <td>16</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/4AksvCnkZaQoTu1nJr62Db" target="_blank"><b>The Feeling</b></a></td>
+            <td><a href="https://open.spotify.com/track/1JOxCh2Aa08z8cNJQJhWBJ" target="_blank">Fill My Little World</a></td>
+            <td>o</td>
+            <td>english indie rock</td>
+            <td>41</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/6veTV9sF06FBf2KN0xAdvo" target="_blank"><b>The Go! Team</b></a></td>
+            <td><a href="https://open.spotify.com/track/5pRs3UKzcsl6c4aoihvtJ3" target="_blank">Huddle Formation</a></td>
+            <td>o</td>
+            <td>brighton indie</td>
+            <td>40</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/41fitgze0BPEJQ3FNclpab" target="_blank"><b>The Guns of Navarone</b></a></td>
+            <td><a href="https://open.spotify.com/track/1xaSaPfzEBYSwW3A0RzvMx" target="_blank">Suite of Island Dances</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>00</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5SHgclK1ZpTdfdAmXW7J6s" target="_blank"><b>The Last Dinner Party</b></a></td>
+            <td><a href="https://open.spotify.com/track/5crY7axm3GejOxy5PsnnPk" target="_blank">Nothing Matters</a></td>
+            <td>o</td>
+            <td></td>
+            <td>69</td>
+         </tr>
+         <tr>
+            <td>SC</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Stage TBC',2)"><i>@Stage TBC</i></td>
+            <td><a href="https://open.spotify.com/artist/0LLilNa5TUAaUwJwLyOf2b" target="_blank"><b>The Lottery Winners</b></a></td>
+            <td><a href="https://open.spotify.com/track/7k2t5SM7IsgEtKtRK8V2sm" target="_blank">Rockstar Sea Shanty</a></td>
+            <td>o</td>
+            <td>manchester indie</td>
+            <td>43</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/0P2q6xyNc2hVFkG3ThjYcJ" target="_blank"><b>The Magic Numbers</b></a></td>
+            <td><a href="https://open.spotify.com/track/0CIUacqGuohdes8fdIP4K3" target="_blank">Forever Lost</a></td>
+            <td>o</td>
+            <td>pop rock</td>
+            <td>37</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sat 29th',1)"><i>Sat 29th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/5Tj0S6c6yYj1NtjDtgHQRs" target="_blank"><b>The Manfreds</b></a></td>
+            <td><a href="https://open.spotify.com/track/2vU8KVZCJCk04u2pR12HFJ" target="_blank">Waltzing Flutes</a></td>
+            <td><b>x</b></td>
+            <td></td>
+            <td>22</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/7aLfd5azGVKmim6H38mZk2" target="_blank"><b>The Mary Wallopers</b></a></td>
+            <td><a href="https://open.spotify.com/track/16Q6QIVgqlMux1JxVH0IO9" target="_blank">Eileen Og</a></td>
+            <td>o</td>
+            <td>irish folk,irish rock</td>
+            <td>47</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/2cCUtGK9sDU2EoElnk0GNB" target="_blank"><b>The National</b></a></td>
+            <td><a href="https://open.spotify.com/track/4tyX1rw9X309WkEdh2As4B" target="_blank">coney island (feat. The National)</a></td>
+            <td>o</td>
+            <td>chamber pop,indie folk,indie rock,indietronica,irish rock,modern rock</td>
+            <td>67</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Avalon',2)"><i>@Avalon</i></td>
+            <td><a href="https://open.spotify.com/artist/6BCpGC485tSshwjemmeAmd" target="_blank"><b>The Scratch</b></a></td>
+            <td><a href="https://open.spotify.com/track/0ansLolwMuxl8ubtrFCfFe" target="_blank">Another Round</a></td>
+            <td>o</td>
+            <td>irish indie rock</td>
+            <td>36</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi" target="_blank"><b>The Streets</b></a></td>
+            <td><a href="https://open.spotify.com/track/312A8WfROSLvZbMDHBUPDp" target="_blank">Fit but You Know It</a></td>
+            <td>o</td>
+            <td>birmingham hip hop,uk garage</td>
+            <td>56</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('The Park Stage',2)"><i>@The Park Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/0ZUyFEafMwocvApBjTXvdo" target="_blank"><b>This Is The Kit</b></a></td>
+            <td><a href="https://open.spotify.com/track/1chmZUBdfxoLWN1LCZ6HLO" target="_blank">Bashed Out</a></td>
+            <td>o</td>
+            <td>bristol indie,chamber pop,chamber psych,indie folk</td>
+            <td>45</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('Sun 30th',1)"><i>Sun 30th</i></td>
+            <td onclick="filterTableCell('Acoustic Stage',2)"><i>@Acoustic Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/059zYnVrxnkUTiNIrHHYyz" target="_blank"><b>Toby Lee</b></a></td>
+            <td><a href="https://open.spotify.com/track/747cz9CNdzfODNGH7b6TAv" target="_blank">Platform 19</a></td>
+            <td>o</td>
+            <td></td>
+            <td>18</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Other Stage',2)"><i>@Other Stage</i></td>
+            <td><a href="https://open.spotify.com/artist/536BYVgOnRky0xjsPT96zl" target="_blank"><b>Two Door Cinema Club</b></a></td>
+            <td><a href="https://open.spotify.com/track/3GBApU0NuzH4hKZq4NOSdA" target="_blank">What You Know</a></td>
+            <td>o</td>
+            <td>indie rock,indietronica,irish rock,modern alternative rock,modern rock,northern irish indie</td>
+            <td>69</td>
+         </tr>
+         <tr>
+            <td>C</td>
+            <td onclick="filterTableCell('day TBC',1)"><i>day TBC</i></td>
+            <td onclick="filterTableCell('Woodsies',2)"><i>@Woodsies</i></td>
+            <td><a href="https://open.spotify.com/artist/2h3ooJn8m8X8cL2g1BZ1Rd" target="_blank"><b>Yard Act</b></a></td>
+            <td><a href="https://open.spotify.com/track/3u7PMsVBQ1viIm8tlhotl6" target="_blank">Dream Job</a></td>
+            <td>o</td>
+            <td>crank wave,uk post-punk revival</td>
+            <td>51</td>
+         </tr>
+      </table>
+      <script>
+         function sortTable(id,n) {
+           var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+           table = document.getElementById(id);
+           switching = true;
+           dir = "asc"; 
+           while (switching) {
+             switching = false;
+             rows = table.rows;
+             for (i = 1; i < (rows.length - 1); i++) {
+               //start by saying there should be no switching:
+               shouldSwitch = false;
+               /*Get the two elements you want to compare,
+               one from current row and one from the next:*/
+               x = rows[i].getElementsByTagName("TD")[n];
+               y = rows[i + 1].getElementsByTagName("TD")[n];
+               /*check if the two rows should switch place,
+               based on the direction, asc or desc:*/
+               if (dir == "asc") {
+                 if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                   //if so, mark as a switch and break the loop:
+                   shouldSwitch= true;
+                   break;
+                 }
+               } else if (dir == "desc") {
+                 if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                   //if so, mark as a switch and break the loop:
+                   shouldSwitch = true;
+                   break;
+                 }
+               }
+             }
+             if (shouldSwitch) {
+               /*If a switch has been marked, make the switch
+               and mark that a switch has been done:*/
+               rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+               switching = true;
+               //Each time a switch is done, increase this count by 1:
+               switchcount ++;      
+             } else {
+               /*If no switching has been done AND the direction is "asc",
+               set the direction to "desc" and run the while loop again.*/
+               if (switchcount == 0 && dir == "asc") {
+                 dir = "desc";
+                 switching = true;
+               }
+             }
+           }
+         }
+      </script>
+      <script>
+         function filterTableCell(txt,col) {
+           if(typeof filterState == 'undefined'){
+             filterState = [false,false,false,false,false,false,false,false];
+           }
+           if(typeof filterValue == 'undefined'){
+             filterValue = ['','','','','','',''];
+           }
+           filterState[col]=!filterState[col];
+           filterValue[col]=txt;  
+           // Declare variables
+           let table = document.getElementById("playlist");
+           let tr = table.getElementsByTagName("tr");
+           // Loop through all table rows, and hide those who don't match the search query
+           // TODO : add input filter on genres ?
+           for (let i = 0; i < tr.length; i++) {
+             let isToshow=true;
+             for(let j = 0; j < filterState.length; j++){
+               let td = tr[i].getElementsByTagName("td")[j];
+               if(td){
+                 let txtValue = td.textContent || td.innerText;
+                 if(filterState[j]){
+                   isToshow=isToshow&&txtValue.indexOf(filterValue[j]) > -1;
+                 }
+               }
+             }
+             if(isToshow){
+               tr[i].style.display = "";
+             }
+             else{
+               tr[i].style.display = "none";
+             }
+           }
+           filters = document.getElementById('filters');
+           if(filters){
+             filters.innerHTML='';
+             for(let k=0;k<filterState.length;k++){
+               if(filterState[k]){
+                 var iDiv = document.createElement('div');
+                 iDiv.id = 'filter_'+k;
+                 iDiv.className = 'filter';
+                 iDiv.innerText=filterValue[k];
+                 iDiv.addEventListener('click', function (e){
+                     filterTableCell('',k);
+                 });
+                 filters.appendChild(iDiv);
+               }
+             }
+           }
+         }
+      </script>
+   </body>
+</html>
